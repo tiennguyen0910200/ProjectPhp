@@ -4,12 +4,13 @@
 	<title>Dan Nhac Trinh</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../Css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 
 
@@ -24,9 +25,79 @@
 						<li><img src="../Img/map.png">Xuân Phú - Hòa Sơn - Hòa Vang - TP. Đà Nẵng</li>
 						<li><img src="../Img/fb.png">Dàn Nhạc Trịnh</li>
 					</ul>
+
 					<div class="flex2">
-						<button><img src="../Img/user.png">Đăng kí</button>
-						<button><img src="../Img/user.png">Đăng nhập</button>
+						<button  data-toggle="modal" data-target="#dangki"><img src="../Img/user.png">Đăng kí</button>
+						<div class="modal fade" id="dangki" role="dialog">
+							<div class="modal-dialog">
+
+								<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Chào mừng</h4>
+									</div>
+									<div class="modal-body">
+										<div class="form-group">
+											<div class="row"> 
+												<div class="col-xs-6 col-md-6">
+
+
+												 <input class="form-control" name="firstname" placeholder="Họ" required="" autofocus="" type="text"> 
+												</div> 
+												<div class="col-xs-6 col-md-6"> <input class="form-control" name="lastname" placeholder="Tên" required="" type="text"> 
+												</div> 
+											</div> <input class="form-control" name="youremail" placeholder="Email" type="email"> <input class="form-control" name="password" placeholder="Mật khẩu" type="password"> <input class="form-control" name="retypepassword" placeholder="Nhập lại mật khẩu" type="password"> <label for=""> Ngày sinh</label> 
+											<div class="row"> 
+												<div class="col-xs-4 col-md-4"> <select class="form-control">              <option value="Day">Ngày</option>            </select> 
+												</div> 
+												<div class="col-xs-4 col-md-4"> <select class="form-control">              <option value="Month">Tháng</option>            </select> 
+												</div> 
+												<div class="col-xs-4 col-md-4"> <select class="form-control">              <option value="Year">Năm</option>            </select> 
+												</div> 
+											</div> <label class="radio-inline">          <input name="sex" id="inlineCheckbox1" value="male" type="radio">          Nam </label> <label class="radio-inline">          <input name="sex" id="inlineCheckbox2" value="female" type="radio">          Nữ </label> 
+											<br> 
+											<br> 
+											<button class="btn btn-lg btn-primary btn-block" type="submit"> Đăng ký</button> 
+											
+										</div>
+										
+									</div>
+									
+								</div>
+
+							</div>
+						</div>
+
+						<button data-toggle="modal" data-target="#dangnhap"><img src="../Img/user.png">Đăng nhập</button>
+						<div class="modal fade" id="dangnhap" role="dialog">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Mời Bạn đăng nhập</h4>
+									</div>
+									<div class="modal-body">
+										<div class="form-group">
+											<div class="row"> 
+												<div class="col-xs-6 col-md-6">
+												<input class="form-control" name="firstname" placeholder="Họ" required="" autofocus="" type="text"> 
+												</div> 
+												<div class="col-xs-6 col-md-6"> <input class="form-control" name="lastname" placeholder="Tên" required="" type="text"> 
+												</div> 
+
+											
+											 <input class="form-control" name="password" placeholder="Mật khẩu" type="password"> 
+											<button class="btn btn-lg btn-primary btn-block" type="submit"> Đăng nhập</button> 
+											
+										</div>
+										
+									</div>
+								</div>
+
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -156,6 +227,7 @@
 					<div class="introduce">
 						<div class="name">
 							<h3 >DÀN NHẠC</h3>
+							<br>
 							<h1 style="color:#a83250; margin-top:-20px;"> <img src="../Img/nhac.png" alt=""> TRỊNH  <img src="../Img/nhac.png" alt=""></h1>
 							<img src="../Img/hoatiet.png" alt="" style="margin-top:-15px; ">
 						</div>
@@ -178,11 +250,13 @@
 
 						<div class="donghe">
 							<h3 >Dàn Nhạc Trịnh</h3>
+							<br>
 							<h2 style="color:#a83250; margin-top:-20px;"> <img src="../Img/nhac.png" alt=""> ĐỒ NGHỀ <img src="../Img/nhac.png" alt=""></h2>
 						</div>
 						<br>
 						<div style="justify-content: center; display: flex;">
 							<div class="dannhac">
+								<br>
 								<h1>Dàn Loa chuyên nghiêp</h1>
 								<p>
 									Với công nghệ tiên tiến như hiện nay,dàn nhạc Trịnh luôn cố gắng thay đổi bộ dàn nhạc của mình theo kịp thời đại để phục vụ mọi người theo cách chuyên nghiệp nhất tất cả cộng cụ đều là những thứ mới nhất, tốt nhất, đặc biệt không sử dụng những vật dụng đã quá cũ nên mọi người hãy yên tâm về chất lượng khi chọn dàn nhạc chúng tôi. 
@@ -196,6 +270,7 @@
 						</div>
 						<div class="nhanvien">
 							<h3 >Dàn Nhạc Trịnh</h3>
+							<br>
 							<h2 style="color:#a83250; margin-top:-20px;"> <img src="../Img/nhac.png" alt=""> ĐỘI NGŨ NHÂN VIÊN <img src="../Img/nhac.png" alt=""></h2>
 						</div>
 						<br>
@@ -217,7 +292,9 @@
 							</div>
 						</div>
 						<div class="donghe">
+
 							<h3 >Dàn Nhạc Trịnh</h3>
+							<br>
 							<h2 style="color:#a83250; margin-top:-20px;"> <img src="../Img/nhac.png" alt=""> LIÊN HỆ <img src="../Img/nhac.png" alt=""></h2>
 							<img src="../Img/hoatiet.png" alt="" style="margin-top:-15px; ">
 							<h4>Quý khách có thể đến để đặt tại địa điểm sau:</h4>
