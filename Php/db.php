@@ -25,7 +25,7 @@ if (isset($_POST['sua'])) { ?>
 	
 }
 
-if(isset($_POST['sua']))
+if(isset($_POST['capnhat']))
 $db->query("UPDATE employee SET name='".$_POST['ten']."',image='".$_POST['anh']."',address='".$_POST['diachi']."',phone='".$_POST['sdt']."',assignment='".$_POST['select']."' WHERE id='".$_POST['sua']."'");
    ?>
 

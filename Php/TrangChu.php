@@ -285,7 +285,7 @@
 							?>
 							<div  class="border">
 								<p><b><?php  echo $result[$i][1]; ?></b></p>
-								<p><img style="width: 200px; height: 200px" src="<?php  echo $result[$i][2]; ?>"></p>
+								<p><img style="width: 200px; height: 200px" src="../Img/<?php  echo $result[$i][2]; ?>"></p>
 								<p><?php  echo $result[$i][5]; ?></p>
 								<button type="button" class="btn btn-info">Thông tin</button>
 							</div>
@@ -310,7 +310,7 @@
 					</div>
 					<br>
 					
-					<footer >
+					<footer style="text-align: center;" >
 						
 
 						<div style="display: flex;">
