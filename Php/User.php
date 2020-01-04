@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Admin</title>
+	<title>User</title>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="../Css/Admin.css">
-	
+	<link rel="stylesheet" type="text/css" href="../Css/user.css">
 </head>
 <body>
-	<div >
+	<div>
+		<div class="top">
+			<ul class="flex">
+				<li><img src="../Img/telephone.png">(+84)983 942 707</li>
+				<li><img src="../Img/map.png">Xuân Phú - Hòa Sơn - Hòa Vang - TP. Đà Nẵng</li>
+				<li><img src="../Img/fb.png">Dàn Nhạc Trịnh</li>
+			</ul>
+		</div>
 		<div style="display: flex; justify-content: center;background-color: #f5e3c1" >
 			<img width="250px" height="250px" src="../Img/logo.png">
 
@@ -18,17 +24,7 @@
 				DÀN NHẠC TRỊNH
 			</div>
 		</div>
-		<div style="text-align: center;">
-		<a href="../Php/Them.php" type="button" class="btn btn-danger">Quản lí nhân viên</a>
-		<a href="../Php/dichvu.php" type="button" class="btn btn-success">Quản lí dịch vụ</a>
-		<a href="../Php/TrangChu.php" type="button" class="btn btn-warning">Quay lại</a>
-			
-		</div>
 	</div>
-	<div >
-		
-	</div>
-
 
 </body>
 </html>

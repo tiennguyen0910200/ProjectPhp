@@ -1,0 +1,13 @@
+.flex{
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	width: 730px;
+
+}
+.top{
+	display: flex;
+	justify-content: center;
+    background-color: #f5e3c1;
+	font-size: 15.5px;
+}
