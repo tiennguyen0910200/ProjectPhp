@@ -156,6 +156,7 @@ footer{
 	text-align: center;
 	padding: 35px;
 	margin-right: 35px;
+	flex-wrap: nowrap;
 }
 
 
